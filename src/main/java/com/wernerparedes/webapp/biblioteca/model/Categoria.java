@@ -1,5 +1,6 @@
 package com.wernerparedes.webapp.biblioteca.model;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    //@NotNull(message = "El Nombre De La Categoria No Puede Ser Nulo")
     private String nombreCategoria;
     
     
